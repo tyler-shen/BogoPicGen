@@ -90,12 +90,6 @@ public class BogoPicGenActivity extends Activity {
             	processIntent(true);
             }        	
         });
-
-        
-        
-        
-		        
-        //takeAPhoto();
     }
 
    
@@ -120,7 +114,7 @@ public class BogoPicGenActivity extends Activity {
     	}
     	try {
     		if (intent.getExtras() != null) {    
-    			if (cancel) {
+    			if (cancel==true) {
     				Toast.makeText(this, "Photo Cancelled!", Toast.LENGTH_LONG).show();
     				setResult(RESULT_CANCELED);
     				finish();
